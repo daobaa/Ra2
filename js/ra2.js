@@ -118,10 +118,6 @@ letraButtons.forEach(button => {
                 points = 0; // Evitar que la puntuación sea 0
             }
 
-            // Contar fallos y cambiar imagen
-            fails++;
-            imgElement.src = `img/img_${fails}.jpg`;
-
             if(fails >= 10){
                 alert("Has perdut la partida :(")
                 letraButtons.forEach(button => {
@@ -140,8 +136,7 @@ letraButtons.forEach(button => {
                 submitButton.disabled = false;
                 // Guardar mejor puntuación
                 saveBestGame(points);
-                // Reiniciar imagen, fallos y puntos
-                imgElement.src = 'img/img_10.jpg';
+                // Reiniciar fallos y puntos
                 fails = 0;
                 points = 0;
             }
@@ -167,11 +162,17 @@ function saveBestGame(points){
     }
 }
 
+//Multiplayer
 function swapTurn(){
     const turn = [10][10];
     const currentTurn = 0;
     for(let i = 0; i < turn.length; i++){
+        "Jugador 1"
         for(let y = 0; y < turn[i].length; y++){
+            if("!equivocar"){
+                i -= 1;
+            }
+            "Turno 0"
             if(i == 0){
                 currentTurn = 0;
             } else if(i == 1){

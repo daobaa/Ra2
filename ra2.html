@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RA2</title>
+    <link rel="stylesheet" href="css/ra2.css">
+    <script src="js/ra2.js" defer></script>
+</head>
+<body>
+    <form>
+        <input type="password" id="word" placeholder="Introduiex una paraula">
+        <span class="toggle-password">
+            <input type="checkbox" id="toggle-psswd">
+            <label for="toggle-psswd" class="icon">👁️</label>
+        </span>
+        <button type="button" id="submit">Començar partida</button>
+    </form>
+    <div class="guess_container">
+        <p id="word_guess">Començar partida</p>
+    </div>
+
+    <div class="center">
+        <div class="player">
+            <div class="h2_cent">
+                <h2>Jugador 1</h1>
+            </div>
+            <p>PUNTS PARTIDA ACTUAL</p>
+            <p id="puntos">0</p>
+            <p>TOTAL PARTIDES</p>
+            <p id="total">0</p>
+            <p>PARTIDES GUANYADES</p>
+            <p><span id="won">0</span> (<span id="porcentaje">%</span>)</p>
+            <p>PARTIDA AMB MÉS PUNTS</p>
+            <p id="best">0</p>
+        </div>
+        <img src="img/img_0.jpg" alt="" id="img">
+    </div>
+    <div id="letras-container">
+        <button type="button" class="letra" disabled>A</button>
+        <button type="button" class="letra" disabled>B</button>
+        <button type="button" class="letra" disabled>C</button>
+        <button type="button" class="letra" disabled>D</button>
+        <button type="button" class="letra" disabled>E</button>
+        <button type="button" class="letra" disabled>F</button>
+        <button type="button" class="letra" disabled>G</button>
+        <button type="button" class="letra" disabled>H</button>
+        <button type="button" class="letra" disabled>I</button>
+        <button type="button" class="letra" disabled>J</button>
+        <button type="button" class="letra" disabled>K</button>
+        <button type="button" class="letra" disabled>L</button>
+        <button type="button" class="letra" disabled>M</button>
+        <button type="button" class="letra" disabled>N</button>
+        <button type="button" class="letra" disabled>Ñ</button>
+        <button type="button" class="letra" disabled>O</button>
+        <button type="button" class="letra" disabled>P</button>
+        <button type="button" class="letra" disabled>Q</button>
+        <button type="button" class="letra" disabled>R</button>
+        <button type="button" class="letra" disabled>S</button>
+        <button type="button" class="letra" disabled>T</button>
+        <button type="button" class="letra" disabled>U</button>
+        <button type="button" class="letra" disabled>V</button>
+        <button type="button" class="letra" disabled>W</button>
+        <button type="button" class="letra" disabled>X</button>
+        <button type="button" class="letra" disabled>Y</button>
+        <button type="button" class="letra" disabled>Z</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+*{
+    font-family: Arial, sans-serif;
+}
+body{
+    margin: 0;
+}
+
+
+.toggle-password input[type="checkbox"]{
+    display: none;
+}
+.toggle-password .icon{
+    cursor: pointer;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.letras-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.letra{
+    background-color: #CBFC71;
+    margin: 0 10px;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5pt;
+    width: 45px;
+    text-align: center;
+}
+.letra:disabled{
+    color: red;
+    border: 1px solid red;
+}
+.letra.enabled{
+    color: black;
+    border: 1px solid black;
+}
+
+form{
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+#submit{
+    background-color: #CBFC71;
+    width: 150px;
+    height: 40px;
+    border-radius: 7pt;
+}
+#word{
+    width: 250px;
+    height: 25px;
+}
+
+.guess_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 20px;
+    border-radius: 15pt;
+    font-size: 50px;
+    background-color: #C8D1F3;
+}
+.center{
+    background-color: #FBD6D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 500px;
+    position: relative;
+    border-radius: 15pt;
+}
+.player{
+    background-color: #BC5371;
+    border: 1px solid #91445a;
+    border-radius: 15pt;
+    position: absolute;
+    left: 10px;
+    width: 300px;
+    color: white;
+    padding: 10px;
+}
+.h2_cent{
+    text-align: center;
+}
+#img{
+    position: relative;
+    border: 2px solid black;
+    border-radius: 15pt;
+}

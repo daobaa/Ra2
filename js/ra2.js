@@ -167,3 +167,16 @@ function saveBestGame(points){
     }
 }
 
+function swapTurn(){
+    const turn = [10][10];
+    const currentTurn = 0;
+    for(let i = 0; i < turn.length; i++){
+        for(let y = 0; y < turn[i].length; y++){
+            if(i == 0){
+                currentTurn = 0;
+            } else if(i == 1){
+                currentTurn = 1;
+            }
+        }
+    }
+}

@@ -166,3 +166,4 @@ function saveBestGame(points){
         bestGameSpan.textContent = bestGameText;
     }
 }
+
